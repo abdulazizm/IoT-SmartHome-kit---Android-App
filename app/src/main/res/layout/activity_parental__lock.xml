@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Parental_Lock"
+    android:requiresFadingEdge="horizontal"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Blue"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Parental Lock Toggle"
+                    android:layout_marginVertical="20dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Secret Key"
+                    android:gravity="left"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/Black"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/secret_to_lock"
+                    android:layout_weight="5"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:hint="10 digit Secret Key"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/grant_lock_access"
+                    android:text="I agree to enable/disable manual switch control for the device"
+                    />
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/submit_lock"
+                android:textColor="@color/white"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content"
+                android:background="@color/Blue"
+                android:text="Toggle Parental Lock"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>

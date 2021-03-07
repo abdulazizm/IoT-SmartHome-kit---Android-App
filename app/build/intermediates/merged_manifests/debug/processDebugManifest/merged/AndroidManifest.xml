@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.FingerPointEngg.abdul.SmartHome"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="28" />
+
+    <uses-feature
+        android:name="android.hardware.fingerprint"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.UPDATE_DEVICE_STATS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.NETWORK_STACK" />
+    <uses-permission android:name="android.permission.TETHER_PRIVILEGED" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Smart Home"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.FingerPointEngg.abdul.SmartHome.ButtonSettings"
+            android:theme="@style/AppTheme.FloatingTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.FingerPointEngg.abdul.SmartHome.TimePicker"
+            android:theme="@style/AppTheme.FloatingTheme" />
+        <activity
+            android:name="com.FingerPointEngg.abdul.SmartHome.AddDevice"
+            android:theme="@style/act_theme_no_title" />
+        <activity
+            android:name="com.FingerPointEngg.abdul.SmartHome.Add_secondary_user"
+            android:theme="@style/act_theme_no_title" />
+        <activity
+            android:name="com.FingerPointEngg.abdul.SmartHome.TimePickerSche"
+            android:theme="@style/AppTheme.FloatingTheme" />
+        <activity
+            android:name="com.FingerPointEngg.abdul.SmartHome.BottomNav"
+            android:label="@string/title_activity_bottom_nav" />
+
+        <service android:name="com.FingerPointEngg.abdul.SmartHome.timerService" />
+
+        <activity
+            android:name="com.FingerPointEngg.abdul.SmartHome.ModuleSelector"
+            android:theme="@style/AppTheme.FloatingTheme" />
+        <activity
+            android:name="com.FingerPointEngg.abdul.SmartHome.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.FingerPointEngg.abdul.SmartHome.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.FingerPointEngg.abdul.SmartHome.DetailsActivity" />
+        <activity android:name="com.FingerPointEngg.abdul.SmartHome.Smart_Controls" />
+        <activity android:name="com.FingerPointEngg.abdul.SmartHome.Device_Settings" />
+        <activity
+            android:name="com.FingerPointEngg.abdul.SmartHome.Reset_Device"
+            android:theme="@style/act_theme_no_title" />
+        <activity
+            android:name="com.FingerPointEngg.abdul.SmartHome.Parental_Lock"
+            android:theme="@style/act_theme_no_title" />
+    </application>
+
+</manifest>

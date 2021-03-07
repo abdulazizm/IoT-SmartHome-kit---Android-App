@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="act_theme_no_title" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.FloatingTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyProgressBarRectangle_red" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+    <item name="android:progressDrawable">@drawable/customprogress_red</item>
+        <item name="android:progress">100</item>
+    <item name="android:minHeight">80dp</item>
+    <item name="android:minWidth">200dp</item>
+</style>
+    <style name="MyProgressBarRectangle_green" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/customprogress_green</item>
+        <item name="android:color"></item>
+        <item name="android:progress">100</item>
+        <item name="android:minHeight">80dp</item>
+        <item name="android:minWidth">200dp</item>
+    </style>
+    <style name="MyProgressBarRound" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/customprogress</item>
+        <item name="android:color"></item>
+        <item name="android:progress">100</item>
+        <item name="android:minHeight">80dp</item>
+        <item name="android:minWidth">200dp</item>
+    </style>
+</resources>

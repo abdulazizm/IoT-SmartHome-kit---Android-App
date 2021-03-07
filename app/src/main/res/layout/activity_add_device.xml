@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:requiresFadingEdge="horizontal"
+    android:orientation="vertical"
+    tools:context=".AddDevice">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Blue"
+        android:layout_marginBottom="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Add Device"
+        android:layout_marginVertical="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:layout_marginVertical="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:text="Model"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/Black"/>
+
+        <Spinner
+            android:id="@+id/model"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Secret Key"
+            android:gravity="left"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/Black"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/secret_key"
+            android:layout_weight="5"
+            android:lines="1"
+            android:maxLength="10"
+            android:hint="10 digit Key (Ex:64ads843s5)"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/add_button"
+        android:text="Add Device"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:background="@color/Blue"/>
+</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
